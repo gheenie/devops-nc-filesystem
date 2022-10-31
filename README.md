@@ -45,7 +45,21 @@ See if you can find out how to make use of command line arguments.
 
 ### **Task 2**
 
-Cats
+Over the years Northcoders has gathered a wonderful selection of cat pictures. However they are saved all over the place and are not named in a helpful manner.
+
+Having said that these cat pictures are the only `jpeg` files in our file system which could be useful when locating them!
+
+Your job is to create a `cat-pics.txt` file within the `/section-1/reports` directory that lists the file paths to each cat picture. For example:
+
+```txt
+> /section-1/reports/cat-pics.txt
+
+./nc-filesystem/stuff/1.jpeg
+etc...
+etc...
+```
+
+> ❗ Make sure you only store the information about files contained within the `nc-filesystem`, **_not_** the nc-filesystem-backup!
 
 ---
 
