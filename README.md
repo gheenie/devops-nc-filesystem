@@ -65,7 +65,7 @@ The [find](https://manned.org/find) command (and some of it's associated options
 
 ---
 
-### **Section 2 - Cleaning up the filesystem**
+## **Section 2 - Cleaning up the filesystem**
 
 Now we've run a few checks on the filesystem and created a few reports it's time for a good old ✨*spring clean*✨. Let's sort out the mess.
 
@@ -78,6 +78,12 @@ Your task is to create a script that finds these empty files and removes them.
 There are a number of ways you could check if a file is empty. A good option could be using the [wc](https://manned.org/wc.1) command.
 
 > ❗ Keep in mind that the `rm` command will **permanently remove files/directories** (not just move them to the bin) so should be used with care. Personally I like to use [this](https://github.com/sindresorhus/trash-cli) tool which makes removing files safer and reversible. You can read more about how not to "`rm` yourself" [here](https://github.com/sindresorhus/guides/blob/main/how-not-to-rm-yourself.md#safeguard-rm)
+
+### **Task 2** - _Organise the cats_
+
+Remember how you created a list of cat picture file paths? It's now time to use that information!
+
+Create a script that uses the data in `/section-1/reports/cat-pics.txt` (created in section 1, task 2) and moves the files into a `cat-pics` directory.
 
 ---
 
