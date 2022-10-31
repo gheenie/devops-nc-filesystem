@@ -12,8 +12,6 @@ else
   echo -e "$RED > Removing current nc-filesystem 🗑️$DEFAULT"
   rm -rf nc-filesystem
 
-  sleep 3
-
   echo -e "$GREEN > Restoring nc-filesystem backup ✅$DEFAULT"
   mkdir nc-filesystem && cp -r ./nc-filesystem-backup/ ./nc-filesystem/
 fi
