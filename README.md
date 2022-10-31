@@ -14,9 +14,9 @@ Before we can start organising the Northcoders files there are some things we ne
 
 It would also be helpful to create some reports about the filesystem for future use.
 
-### **Task 1**
+### **Task 1** - _Check if a staff file exists_
 
-Within the `stuff` directory there are a number of staff files. Your task is to create a script that checks if files for given staff members are present in the directory.
+Within the very helpfully named `stuff` directory there are a number of staff files. Your task is to create a script that checks if files for given staff members are present in the directory.
 
 All staff files follow the same naming convention of `staff-NAME.json` for example the file `staff-Duncan.json`.
 
@@ -43,7 +43,7 @@ See if you can find out how to make use of command line arguments.
     David
     Cat
 
-### **Task 2**
+### **Task 2** - _Find cat pictures_
 
 Over the years Northcoders has gathered a wonderful selection of cat pictures. However they are saved all over the place and are not named in a helpful manner.
 
@@ -61,6 +61,20 @@ etc...
 
 > ❗ Make sure you only store the information about files contained within the `nc-filesystem`, **_not_** the nc-filesystem-backup!
 
+The [find](https://manned.org/find) command (and some of it's associated options) could come in very handy here!
+
 ---
+
+### **Section 2 - Cleaning up the filesystem**
+
+Now we've run a few checks on the filesystem and created a few reports it's time for a good old ✨*spring clean*✨. Let's sort out the mess.
+
+### **Task 1** - _Delete empty files_
+
+First things first you may or may not have noticed that there are a number of empty files. Who know's why they exist, one theory is that people accidentally create files that they don't need. Or maybe it's a poltergeist, who knows!
+
+Your task is to create a script that finds these empty files and removes them.
+
+There are a number of ways you could check if a file is empty. A good option could be using the [wc](https://manned.org/wc.1) command.
 
 ## Extension tasks
