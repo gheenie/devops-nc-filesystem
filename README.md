@@ -18,32 +18,20 @@ It would also be helpful to create some reports about the filesystem for future 
 
 ### **Task 1** - _Check if a staff file exists_
 
-Within the very helpfully named `stuff` directory there are a number of staff files. Your task is to create a script that checks if files for given staff members are present in the directory.
+Within the very helpfully named `stuff` directory there are a number of staff files. Your task is to create a script that checks if a file for a given staff ID number is present in the directory.
 
-All staff files follow the same naming convention of `staff-NAME.json` for example the file `staff-Duncan.json`.
+All staff files follow the same naming convention of `nc-ID.json` for example the file `nc-001.json`.
 
 Your script should print out a suitable message to the terminal indicating if the staff file can be found.
 
-While you could hard-code the name of the staff member that you wish to search for within the script it would be nicer (and much more reusable) if you could pass a name to the script. For example:
+While you could hard-code the ID of the staff member that you wish to search for within the script it would be nicer (and much more reusable) if you could pass an ID number to the script. For example:
 
 ```sh
-check-staff-file-exists "Duncan"
+$ ./section-1/check-staff-file-exists "001"
 # prints "Staff file found" to the terminal
 ```
 
 See if you can find out how to make use of command line arguments.
-
-**Staff members you could look for:**
-
-    Duncan
-    Dave
-    Poonam
-    Alex
-    Verity
-    Joe
-    Sarah
-    David
-    Cat
 
 </br>
 
@@ -56,7 +44,7 @@ If it is a directory you should also list the contents of said directory.
 Example use:
 
 ```sh
-./section-1/2-check-file-type
+$ ./section-1/2-check-file-type
 
 ...
 
@@ -93,6 +81,27 @@ The [find](https://manned.org/find) command (and some of it's associated options
 
 </br>
 
+### **Task 4** - _Filter staff by known programming languages_
+
+The number of mentors at Northcoders has grown a lot recently and we need a way to find out who should be assigned where.
+
+Your job is to create a script that accepts a programming language as it's sole argument and creates a `txt` file that lists the mentors that know that language.
+
+For example:
+
+```sh
+$ ./section-1/4-filter-mentors-by-language "Python"
+
+...
+
+# This should create a file called "python-mentors.txt" in the reports directory which contains the names of all the mentors that know python
+```
+
+> ❗ Not all staff members are **mentors**, make sure you only list the names of mentors who know the given programming language.
+
+As the staff files are is `json` format you might wish to use a tool like [`jq`](https://stedolan.github.io/jq/).
+</br>
+
 ---
 
 ## **Section 2 - Cleaning up the filesystem**
@@ -118,6 +127,8 @@ There are a number of ways you could check if a file is empty. A good option cou
 Remember how you created a list of cat picture file paths? It's now time to use that information!
 
 Create a script that uses the data in `/section-1/reports/cat-pics.txt` (created in section 1, task 2) and moves the files into a `cat-pics` directory.
+
+Additionally you should also rename the file to be clearer what it is. For example: `cat1.jpeg` instead of `1.jpeg`
 
 </br>
 
