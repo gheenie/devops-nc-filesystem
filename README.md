@@ -18,7 +18,7 @@ It would also be helpful to create some reports about the filesystem for future 
 
 ### **Task 1** - _Check if a staff file exists_
 
-Within the very helpfully named `stuff` directory there are a number of staff files. Your task is to create a script that checks if a file for a given staff ID number is present in the directory.
+Within the very helpfully named `staff` directory there are a number of staff files. Your task is to create a script that checks if a file for a given staff ID number is present in the directory.
 
 All staff files follow the same naming convention of `nc-ID.json` for example the file `nc-001.json`.
 
@@ -180,3 +180,27 @@ Your task is to organise by the following rules:
 ---
 
 ## Extension tasks
+
+Congratulations 🎉. You have successfully sorted out our file system, look how tidy it is now!
+
+Here's some ideas for unrelated scripts you can create to flex your new found shell-scripting skills.
+
+1. Create a script that when run displays a digital clock in your terminal.
+
+![digital clock script](extension-examples/clock.png)
+
+> It's one thing to display the time in a nice readable way but can you make it so the clock refreshes every second?
+
+2. If there's a sequence of commands to use regularly see if you can automate it.
+
+> A good choice might be something like `git clone` and `npm install` which I imagine you did of lot of in the Fundamentals and Backend sections of the course.
+
+3. Create a terminal based note taking tool/cheatsheet.
+
+You should be able to:
+
+- write notes
+- edit notes
+- read notes
+
+> Think about how this could be organised. A simple `txt` file? A `json` file? Should the notes be organised by topic?
