@@ -31,6 +31,8 @@ $ ./section-1/check-staff-file-exists "001"
 # prints "Staff file found" to the terminal
 ```
 
+See if you can find out how to make use of command line arguments.
+
 </br>
 
 ### **Task 2** - _Check file type_
@@ -46,13 +48,13 @@ $ ./section-1/2-check-file-type
 
 ...
 
-# If user inputs "be-pets-and-owners" something like this shoult be printed to the terminal:
+# If user inputs "top-secret-sprint-solutions" something like this shoult be printed to the terminal:
 
-be-pets-and-owners is a directory
+top-secret-sprint-solutions is a directory
 
-Contents of be-pets-and-owners:
+Contents of top-secret-sprint-solutions:
 
-README.md
+todo.txt
 ```
 
 </br>
@@ -110,13 +112,13 @@ Now we've run a few checks on the filesystem and created a few reports it's time
 
 ### **Task 1** - _Delete empty files_
 
-First things first you may or may not have noticed that there are a number of empty files.
+First things first you may or may not have noticed that there are a number of empty files. Who know's why they exist, one theory is that people accidentally create files that they don't need. Or maybe it's a poltergeist, who knows!
 
-Your task is to create a script that finds these empty files and deletes them.
+Your task is to create a script that finds these empty files and removes them.
 
 There are a number of ways you could check if a file is empty. A good option could be using the [wc](https://manned.org/wc.1) command.
 
-> ❗ Keep in mind that the `rm` command will **permanently remove files/directories** (not just move them to the bin) so should be used with care. We can recommend [this](https://github.com/sindresorhus/trash-cli) tool which makes removing files safer and reversible. You can read more about how not to "`rm` yourself" [here](https://github.com/sindresorhus/guides/blob/main/how-not-to-rm-yourself.md#safeguard-rm)
+> ❗ Keep in mind that the `rm` command will **permanently remove files/directories** (not just move them to the bin) so should be used with care. Personally I like to use [this](https://github.com/sindresorhus/trash-cli) tool which makes removing files safer and reversible. You can read more about how not to "`rm` yourself" [here](https://github.com/sindresorhus/guides/blob/main/how-not-to-rm-yourself.md#safeguard-rm)
 
 </br>
 
@@ -134,17 +136,17 @@ Additionally you should also rename the file to be clearer what it is. For examp
 
 In the `code` directory you'll notice that some files and directories start with `fun-`/`be-`/`de-`. However only the **directories** should have this naming convention.
 
-Your job is to create a script that removes the `fun-`/`be-`/`de-` prefix from **files** but leave the **directories** untouched.
+Your job is to create a script that removes the `fun-`/`be-`/`de-` prefix from files but leave the directories untouched.
 
-> You could refactor your `2-check-file-type` script to accept a command line argument instead of user input and then use that script to check the contents on the `code` directory. However this is by no means the only way to approach this task.
+> You could refactor your `2-check-file-type` script to accept an argument instead of an input and then use that script to check the contents on the `code` directory. However this is by no means the only way to approach this task.
 
 </br>
 
 ### **Task 4** - _Organise code_
 
-Now for the biggest task, it's time to organise the code.
+Now for a bit of a hefty task, it's time to organise the code.
 
-If you have a look at the `code` directory you'll see that there are a range of files containing code written in several different programming languages.
+If you have a look at the current filesystem you'll see that there are a range of files and directories containing code written in a number of different programming languages.
 
 </br>
 
@@ -193,7 +195,7 @@ Here's some ideas for unrelated scripts you can create to flex your new found sh
 
 2. If there's a sequence of commands to use regularly see if you can automate it.
 
-> A good choice might be something like `git clone` and `npm install` which you will have done a lot of in the Fundamentals and Backend sections of the course.
+> A good choice might be something like `git clone` and `npm install` which I imagine you did of lot of in the Fundamentals and Backend sections of the course.
 
 </br>
 

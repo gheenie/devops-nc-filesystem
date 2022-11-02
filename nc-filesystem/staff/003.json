@@ -1,5 +1,6 @@
 {
-	"name": "Duncan Crawley",
-	"age": 28,
-	"role": "Mentor"
+	"name": "David Bartlett",
+	"age": 21,
+	"role": "Classroom Lead",
+	"languages": ["Python", "JavaScript", "Go", "SQL"]
 }
