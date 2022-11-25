@@ -79,28 +79,7 @@ The [find](https://manned.org/find) command (and some of it's associated options
 
 </br>
 
-### **Task 4** - _Filter staff by known programming languages_
 
-The number of mentors at Northcoders has grown a lot recently and we need a way to find out who should be assigned where.
-
-Your job is to create a script that accepts a programming language as it's sole argument and creates a `txt` file that lists the mentors that know that language.
-
-For example:
-
-```sh
-$ ./section-1/4-filter-mentors-by-language "Python"
-
-...
-
-# This should create a file called "python-mentors.txt" in the reports directory which contains the names of all the mentors that know python
-```
-
-> ❗ Not all staff members are **mentors**, make sure you only list the names of mentors who know the given programming language.
-
-As the staff files are is `json` format you might wish to use a tool like [`jq`](https://stedolan.github.io/jq/).
-</br>
-
----
 
 ## **Section 2 - Cleaning up the filesystem**
 
@@ -174,6 +153,35 @@ Your task is to organise by the following rules:
 - **Directories** that start with `de` can be moved into the `python/sprints` directory.
 - **Files** that start with `kata-` can be moved into a `kata` directory depending on what file extension they have (`js` / `py` / `go` / `ts`).
 - Any other files that aren't covered by the previous rules can be moved into a `loose` directory depending on their file extension.
+
+---
+
+Well done on completing the scripting exercises! You now have a choice, you can continue with some harder tasks on our file system (**_Harder Tasks_**) or try your hand at creating your own custom scripts (**_Extension Tasks_**)
+
+## Harder Tasks
+
+
+
+### **Task 1** - _Filter staff by known programming languages_
+
+The number of mentors at Northcoders has grown a lot recently and we need a way to find out who should be assigned where.
+
+Your job is to create a script that accepts a programming language as it's sole argument and creates a `txt` file that lists the mentors that know that language.
+
+For example:
+
+```sh
+$ ./section-1/4-filter-mentors-by-language "Python"
+
+...
+
+# This should create a file called "python-mentors.txt" in the reports directory which contains the names of all the mentors that know python
+```
+
+> ❗ Not all staff members are **mentors**, make sure you only list the names of mentors who know the given programming language.
+
+As the staff files are is `json` format you might wish to use a tool like [`jq`](https://stedolan.github.io/jq/).
+</br>
 
 ---
 
