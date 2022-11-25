@@ -193,8 +193,6 @@ Here's some ideas for unrelated scripts you can create to flex your new found sh
 
 1. Create a script that when run displays a digital clock in your terminal.
 
-![digital clock script](extension-examples/clock.png)
-
 > It's one thing to display the time in a nice readable way but can you make it so the clock refreshes every second?
 
 </br>
