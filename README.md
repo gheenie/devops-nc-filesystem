@@ -30,6 +30,7 @@ While you could hard-code the ID of the staff member that you wish to search for
 $ ./section-1/check-staff-file-exists "001"
 # prints "Staff file found" to the terminal
 ```
+<em>**Hint**: Have a look at CHMOD if you are having permission issues</em>....
 
 </br>
 
