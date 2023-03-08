@@ -1,5 +1,5 @@
-rm -rf ./section-1/reports
 mkdir -p ./section-1/reports
+rm -r ./section-1/reports/cat-pics.txt
 
 CAT_FILE_NAMES=$(find ./nc-filesystem -name *.jpeg -type f)
 
